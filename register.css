@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a225e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Register Container */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 440px;
+    max-height: 845px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Register Title */
+.register-title {
+    font-size: 30px;
+    color: #0a225e;
+    margin-top: 0px;
+    text-align: center;
+    border-bottom: 3px solid #0a225e;
+    padding-bottom: 15px;
+    font-weight: 1000;
+}
+
+/* Register Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+/* Register Form Label */
+.register-form label {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-top: 1px;
+    color: #0a225e;
+}
+
+/* Register Form Input */
+.register-form input,
+.register-form select,
+.register-form textarea {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    max-width: 415px;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+/* Focus Effect */
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    border-color: blue;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Required Field Indicator */
+.register-form label.required::after {
+    content: " *Required";
+    color: #d32f2f;
+    font-size: 13px;
+}
+
+/* Register Form Button */
+.register-form button {
+    padding: 12px;
+    background-color: #0a225e;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Register Form Button Hover */
+.register-form button:hover {
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.login-link {
+    margin-top: 15px;
+    font-family: Quicksand;
+}
+
+.login-link a {
+    color: #0a225e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 750;
+}
+
+/* Gaya untuk pop-up error */
+#error-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    color: #0a225e;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #e0e0e0;
+    color: #d9534f;
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a225e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #0a225e;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0a225e;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #091e54;
+    padding-bottom: 10px;
+}
+
+/* Form Label */
+label {
+    font-weight: 500;
+    color: #0a225e;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form Input, Textarea, and Select */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #0a225e;
+    background-color: #f8f9fa;
+}
+
+/* Button */
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: #0a225e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+/* Back Button */
+a.logout-btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: #0a225e;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+a.logout-btn:hover {
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+a.logout-btn:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, textarea, select {
+        font-size: 0.9rem;
+    }
+
+    button, a.logout-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input, textarea, select {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    button, a.logout-btn {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}

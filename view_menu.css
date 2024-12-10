@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a225e;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #0a225e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0a225e;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #091e54;
+    padding-bottom: 10px;
+}
+
+.menu-list {
+    margin-top: 20px;
+}
+
+.menu-category {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-bottom: 2px solid #091e54;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #0a225e;
+}
+
+.menu-item p {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+.menu-price {
+    font-weight: bold;
+    color: #0a225e;
+    font-size: 16px;
+}
+
+.back-to-reservation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0a225e;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}

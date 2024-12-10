@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a225e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container for the page */
+.main-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0a225e;
+    text-align: center;
+    border-bottom: 3px solid #091e54;
+    padding-bottom: 10px;
+}
+
+/* Add button for new menu */
+.add-menu-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a225e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-menu-btn:hover {
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.add-menu-btn:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+/* Styling for the table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #0a225e;
+    color: white;
+}
+
+.styled-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Button styles for editing and deleting menu items */
+.edit-btn, .delete-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #0a225e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.edit-btn:active, .delete-btn:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+/* Kontainer untuk tombol Back */
+.button-container-edit-menu {
+    margin-top: 20px;
+    text-align: center; /* Tengahkan tombol */
+    border-radius: 15px;
+}
+
+/* Gaya untuk tombol Back */
+.back-edit-menu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a225e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-edit-menu:hover {
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.back-edit-menu:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+.modal {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; /* Ubah menjadi flex agar modal terpusat */
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Default sembunyikan modal */
+    opacity: 0; /* Mulai dengan transparan */
+    transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+.modal.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal:not(.hidden) {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #0a225e;
+}
+
+/* Input, Select, Textarea, Button styling */
+input, select, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Modal buttons */
+button[type="submit"], button[type="button"] {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a225e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active, button[type="button"]:active {
+    background-color: blue;
+    transform: translateY(1px);
+}
+
+/* Modal text area */
+textarea {
+    height: 100px;
+}

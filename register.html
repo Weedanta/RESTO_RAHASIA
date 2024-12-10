@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CW Coffee & Eatery</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="register.js" defer></script>
+<body>
+    <div class="register-container">
+        <h1 class="register-title">Account Registration</h1>
+        <form class="register-form" action="register_process.php" method="post">
+            <label class="required">Full Name:</label>
+            <input type="text" name="nama" placeholder="Your Answer" required>
+
+            <label class="required">Gender:</label>
+            <select name="jenis_kelamin" required>
+                <option value="" disabled selected>Choose</option>
+                <option value="Laki-laki">Male</option>
+                <option value="Perempuan">Female</option>
+            </select>
+
+            <label>Address:</label>
+            <textarea name="alamat" placeholder="Your Answer"></textarea>
+
+            <label>Personal Describe:</label>
+            <textarea name="deskripsi" placeholder="This is your description"></textarea>
+
+            <label class="required">Email:</label>
+            <input type="email" name="email" placeholder="users@domain.com" required>
+
+            <label class="required">WhatsApp or Phone:</label>
+            <input type="tel" name="nomor_telepon" placeholder="+62" required>
+
+            <label class="required">Create Password:</label>
+            <input type="password" name="password" placeholder="Type Password" required>
+
+            <label class="required">Confirm Password:</label>
+            <input type="password" name="confirm_password" placeholder="Re-Type Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login_form.html">Login</a></p>
+    </div>
+
+    <!-- Pop-up Konfirmasi Password Tidak Cocok -->
+    <div id="error-popup">
+        <span class="close-btn" onclick="closeErrorPopup()">&#10005;</span>
+        <p class="popup-message">The password does not match!</p>
+    </div>
+</body>
+</html>

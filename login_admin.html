@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator - CW Coffee & Eatery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login_admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-login-container">
+        <h1 class="admin-login-title">Administrator Login</h1>
+        <form class="admin-login-form" action="process_login.php" method="POST" id="adminLoginForm">
+            <label for="admin-email">Email:</label>
+            <input type="email" id="admin-email" name="email" required>
+
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+<!-- Popup Error -->
+<div id="popup-admin">
+    <span class="close-btn-admin" onclick="closeErrorPopup()">&#10005;</span>
+    <p class="popup-message" id="error-message"></p>
+</div>
+
+<script>
+    // Function to display error popup
+function showErrorPopup(message) {
+    const errorPopup = document.getElementById('popup-admin');
+    const errorMessage = document.getElementById('error-message');
+    errorMessage.textContent = message;
+    errorPopup.style.display = 'block';
+}
+
+// Function to close error popup
+function closeErrorPopup() {
+    const errorPopup = document.getElementById('popup-admin');
+    errorPopup.style.display = 'none';
+}
+
+// Check URL parameters for error messages
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('error') === 'user_not_found') {
+    showErrorPopup("Email not found. Please check again or register.");
+} else if (urlParams.get('error') === 'wrong_password') {
+    showErrorPopup("Incorrect password. Please try again.");
+}
+</script>
+</body>
+</html>
